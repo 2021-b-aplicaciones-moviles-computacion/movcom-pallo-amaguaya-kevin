@@ -6,6 +6,8 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
@@ -14,9 +16,11 @@ import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
     val CODIGO_RESPUESTA_INTENT_EXPLICITO = 401
-    val CODIGO_RESPUESTA_INTENT_IMPLICITO = 402
+
 
 /*    var resultLauncher = registerForActivityResult(
+
+    var resultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
         ){
             result ->
@@ -54,6 +58,7 @@ class MainActivity : AppCompatActivity() {
                     )
                     startActivityForResult(intentConRespuesta, CODIGO_RESPUESTA_INTENT_IMPLICITO)
                 }
+
     }
 
     fun abrirActividadConParametros(clase: Class<*>){
@@ -106,6 +111,7 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+        resultLauncher.launch(intentExplicito)
     }
 
     fun irActividad(clase: Class<*>){

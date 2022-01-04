@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo"> Hola! Soy land español</string>
+    <color name="color_v1">#5728BA</color>
+    <color name="colorBackground_v1">#E7F6C3</color>
+</resources>

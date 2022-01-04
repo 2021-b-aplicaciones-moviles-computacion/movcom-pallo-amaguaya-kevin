@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo"> Hi! I am english port</string>
+    <color name="color_v1">#0C759F</color>
+    <color name="colorBackground_v1">#C3F6C3</color>
+</resources>
