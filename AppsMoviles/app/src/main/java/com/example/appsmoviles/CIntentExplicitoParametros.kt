@@ -15,7 +15,9 @@ class CIntentExplicitoParametros : AppCompatActivity() {
         val nombre = intent.getStringExtra("nombre")
         val apellido = intent.getStringExtra("apellido")
         val edad = intent.getIntExtra("edad",0)
-        val entrenador = intent.getParcelableExtra<BEntrenador>("entrenador")
+
+        val entrenador = intent.getParcelableExtra<BEntrenador>("a")
+
         Log.i("intent", "Value ${nombre} ${apellido} ${edad} ${entrenador}")
 
         val boton = findViewById<Button>(R.id.bt_D_respuesta)
@@ -28,10 +30,12 @@ class CIntentExplicitoParametros : AppCompatActivity() {
         intentDevolverParametros.putExtra("nombreModificado", "Mauricio")
         intentDevolverParametros.putExtra("edadModificado", 20)
         intentDevolverParametros.putExtra("entrenador", BEntrenador("Maria", "Chunchun"))
+        //setRsult de la clase padre
         setResult(
             RESULT_OK,
             intentDevolverParametros
         )
+        //Finish de la clase padre
         finish()
     }
 }

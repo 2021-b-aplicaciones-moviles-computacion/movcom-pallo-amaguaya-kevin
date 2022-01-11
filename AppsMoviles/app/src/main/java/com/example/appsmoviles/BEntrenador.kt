@@ -7,12 +7,11 @@ class BEntrenador(
     val nombre: String?,
     val descripcion: String?
     // val numeros: Unit = null,)
-                       ):Parcelable {
+    ):Parcelable {
 
     override fun toString(): String {
         return "Nombre: ${nombre} Descripción: ${descripcion}"
     }
-
 
     constructor(parcel: Parcel): this(
         parcel.readString(),
@@ -20,7 +19,6 @@ class BEntrenador(
     ){
 
     }
-
     override fun describeContents(): Int {
         return 0
     }

@@ -17,8 +17,7 @@ import kotlin.math.log
 class MainActivity : AppCompatActivity() {
     val CODIGO_RESPUESTA_INTENT_EXPLICITO = 401
 
-
-/*    var resultLauncher = registerForActivityResult(
+    val CODIGO_RESPUESTA_INTENT_IMPLICITO = 402
 
     var resultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -31,11 +30,43 @@ class MainActivity : AppCompatActivity() {
                     Log.i("intent", "${data?.getIntExtra("edadModificado",0)}")
                 }
             }
-        }*/
+        }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        /*--------------------METODOS PARA LA BASE DE DATOS USUARIOS--------------*/
+        EBaseDeDatos.TablaUsuario = ESqliteHelperUsuario(this)
+        if (EBaseDeDatos.TablaUsuario != null) {
+            val idQuemado = 2
+            EBaseDeDatos.TablaUsuario?.crearUsuarioFormulario(
+                "Kevin",
+                "Kevin desc"
+            )
+            var consulta = EBaseDeDatos.TablaUsuario?.consultarUsuarioFormulario(
+                idQuemado
+            )
+            Log.i("bdd", "Primera Consulta: ${consulta?.nombre}")
+            EBaseDeDatos.TablaUsuario?.actualizarUsuarioFormulario(
+                idQuemado,
+                "Mauricio",
+                "Muricio desc"
+            )
+            consulta = EBaseDeDatos.TablaUsuario?.consultarUsuarioFormulario(
+                idQuemado
+            )
+            Log.i("bdd", "Primera Consulta: ${consulta?.nombre}")
+            EBaseDeDatos.TablaUsuario?.eliminarUsuarioFormulario(
+                idQuemado
+            )
+            consulta = EBaseDeDatos.TablaUsuario?.consultarUsuarioFormulario(
+                idQuemado
+            )
+            Log.i("bdd", "Primera Consulta: ${consulta?.nombre}")
+        }
+        /*----------------------------------*/
 
         val buttonContinuar=findViewById<Button>(R.id.button_Continuar)
         buttonContinuar.setOnClickListener{
@@ -45,10 +76,7 @@ class MainActivity : AppCompatActivity() {
         buttonLsView.setOnClickListener{
             irActividad(BListView::class.java)
         }
-        val buttonIntent=findViewById<Button>(R.id.btn_intent)
-        buttonIntent.setOnClickListener{
-            abrirActividadConParametros(CIntentExplicitoParametros::class.java)
-        }
+
         val botonIntentImplicito = findViewById<Button>(R.id.btn_ir_intent_implicto)
         botonIntentImplicito.
                 setOnClickListener {
@@ -59,6 +87,12 @@ class MainActivity : AppCompatActivity() {
                     startActivityForResult(intentConRespuesta, CODIGO_RESPUESTA_INTENT_IMPLICITO)
                 }
 
+        //Intent Expllicito
+
+        val buttonIntent=findViewById<Button>(R.id.btn_intent)
+        buttonIntent.setOnClickListener{
+            abrirActividadConParametros(CIntentExplicitoParametros::class.java)
+        }
     }
 
     fun abrirActividadConParametros(clase: Class<*>){
@@ -67,9 +101,14 @@ class MainActivity : AppCompatActivity() {
         intentExplicito.putExtra("nombre","Kevin")
         intentExplicito.putExtra("apellido","Pallo")
         intentExplicito.putExtra("edad",23)
-        //startActivityForResult(intent, CODIGO_RESPUESTA_INTENT_EXPLICITO)
-       // resultLauncher.launch(intentExplicito)
-        startActivityForResult(intentExplicito, CODIGO_RESPUESTA_INTENT_EXPLICITO) //401
+
+        intentExplicito.putExtra("a", BEntrenador("Joaquín", "Correa@epn.ec"))
+
+        resultLauncher.launch(intentExplicito)
+
+        //startActivityForResult(intentExplicito, CODIGO_RESPUESTA_INTENT_EXPLICITO) //401
+
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

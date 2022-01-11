@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Examen_PrimerBimestre">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Jugador_editar"></activity>
+        <activity android:name=".Equipo_editar" />
+        <activity android:name=".Jugador" />
+        <activity android:name=".Equipo" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

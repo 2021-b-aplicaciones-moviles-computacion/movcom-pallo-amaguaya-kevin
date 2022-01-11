@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Examen_PrimerBimestre</string>
+    <string name="continuar">Continuar</string>
+    <string name="titulo_equipo">Lista de equipos</string>
+    <string name="titulo_juegador">Lista de jugadores</string>
+    <string name="equipo_editar">Editar equipo</string>
+    <string name="nombre_equipo">Nombre</string>
+    <string name="deudas_equipo">Deudas</string>
+    <string name="id_equipo">Identificador</string>
+    <string name="campeonatos_equipo">Campeonatos</string>
+    <string name="fecha_equipo">Fecha de fundacion</string>
+    <string name="btn_editar_equipo">Editar</string>
+
+    <string name="jugador_editar">Editar jugador</string>
+    <string name="nombre_jugador">Nombre</string>
+    <string name="idEquipo_jugador">Identicador Equipo</string>
+    <string name="dorsal">Dorsal</string>
+    <string name="lesiones">Lesiones</string>
+    <string name="sueldo">Sueldo</string>
+    <string name="fecha_nacimiento">Fecha de nacimiento</string>
+
 </resources>

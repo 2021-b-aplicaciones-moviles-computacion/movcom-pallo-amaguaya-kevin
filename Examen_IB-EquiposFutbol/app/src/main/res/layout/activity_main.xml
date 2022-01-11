@@ -4,15 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/futbol_fondo1"
+    android:padding="10px"
+    android:paddingStart="10px"
+    android:paddingLeft="10px"
+    android:paddingTop="10px"
+    android:paddingEnd="10px"
+    android:paddingRight="10px"
+    android:paddingBottom="10px"
+    tools:context="@string/continuar">
 
-    <TextView
+    <Button
+        android:id="@+id/button_continue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="580dp"
+        android:background="@drawable/rectangle_1"
+        android:backgroundTint="#FFFFFF"
+        android:text="Continuar"
+        android:textColor="#F6F1F1"
+        android:textColorHighlight="#1C1818"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#B9E1D3D3"
+        android:fontFamily="sans-serif-smallcaps"
+        android:padding="10px"
+        android:text="App Futbol"
+        android:textColor="#611AC5"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
