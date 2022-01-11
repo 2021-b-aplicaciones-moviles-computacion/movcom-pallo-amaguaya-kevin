@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppsMoviles">
         <activity android:name=".CIntentExplicitoParametros"></activity>
-        <activity android:name=".BListView" />
-        <activity android:name=".cicloVida" />
+        <activity android:name=".BListView" android:exported="true"/>
+
         <activity android:name=".cicloDeVida" />
         <activity
             android:name=".MainActivity"

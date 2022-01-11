@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-port\\values-es-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\values-es-port\\values4.xml",
+                    "from": {
+                        "startLines": "4,-1,-1",
+                        "startColumns": "4,-1,-1",
+                        "startOffsets": "166,-1,-1",
+                        "endColumns": "52,-1,-1",
+                        "endOffsets": "214,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,108,151",
+                        "endColumns": "52,42,63",
+                        "endOffsets": "103,146,210"
+                    }
+                }
+            ]
+        }
+    ]
+}

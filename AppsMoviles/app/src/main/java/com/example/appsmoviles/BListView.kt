@@ -28,6 +28,7 @@ class BListView : AppCompatActivity() {
             this, //Contexto
             android.R.layout.simple_list_item_1, // como se va a ver en el XML
             //arreglo Arreglo
+
             BBaseDatosMemoria.arregloBEntrenador
         )
 
@@ -63,6 +64,7 @@ class BListView : AppCompatActivity() {
         Log.i("context-menu","Posicion: ${id}");
     }
 
+
     // 3. Que opción se selecciona
     override fun onContextItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
@@ -97,14 +99,23 @@ class BListView : AppCompatActivity() {
             null
         )
 
-/*        builder.setMultiChoiceItems(
+        val opciones = resources.getStringArray(
+            R.array.string_array_opciones_dialogo
+        )
+
+        val seleccionPrevia = booleanArrayOf(
+            true, false, false
+        )
+
+       builder.setMultiChoiceItems(
             opciones,
-            seleccionPrivada,{
+            seleccionPrevia,{
                 dialog,
                 which,
-                    isChecked
+                    isChecked ->
+                    Log.i("dialogo", "Dio click en el item ${which}")
             }
-        )*/
+        )
 
 
         val dialog = builder.create()
