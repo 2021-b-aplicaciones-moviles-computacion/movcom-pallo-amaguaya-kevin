@@ -3,8 +3,6 @@ package com.example.appsmoviles
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.provider.ContactsContract
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -93,6 +91,13 @@ class MainActivity : AppCompatActivity() {
         buttonIntent.setOnClickListener{
             abrirActividadConParametros(CIntentExplicitoParametros::class.java)
         }
+
+        val buttonRecyclerView = findViewById<Button>(R.id.btn_ir_recycler_view)
+
+        buttonRecyclerView
+            .setOnClickListener {
+                abrirActividadConParametros(GRecyclerView::class.java)
+            }
     }
 
     fun abrirActividadConParametros(clase: Class<*>){
@@ -150,7 +155,7 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
-        resultLauncher.launch(intentExplicito)
+        //resultLauncher.launch(intentExplicito)
     }
 
     fun irActividad(clase: Class<*>){

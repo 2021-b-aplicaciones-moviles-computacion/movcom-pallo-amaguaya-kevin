@@ -6,11 +6,6 @@
                 {
                     "source": "C:\\Users\\kevin\\.gradle\\caches\\transforms-2\\files-2.1\\9a7d7c09f7d5c86a33d98c61e050e9f7\\appcompat-1.4.0\\res\\values-port\\values-port.xml",
                     "from": {
-                        "startLines": "-1",
-                        "startColumns": "-1",
-                        "startOffsets": "-1"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
