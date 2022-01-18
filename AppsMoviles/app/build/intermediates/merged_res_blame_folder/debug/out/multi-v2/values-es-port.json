@@ -6,11 +6,11 @@
                 {
                     "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\values-es-port\\values4.xml",
                     "from": {
-                        "startLines": "4,-1,-1",
-                        "startColumns": "4,-1,-1",
-                        "startOffsets": "166,-1,-1",
-                        "endColumns": "52,-1,-1",
-                        "endOffsets": "214,-1,-1"
+                        "startLines": "4,3,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "166,122,57",
+                        "endColumns": "52,42,63",
+                        "endOffsets": "214,160,116"
                     },
                     "to": {
                         "startLines": "2,3,4",

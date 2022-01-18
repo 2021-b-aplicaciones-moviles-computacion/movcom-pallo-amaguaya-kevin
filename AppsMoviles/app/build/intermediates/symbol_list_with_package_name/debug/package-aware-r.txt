@@ -1939,8 +1939,10 @@ id btn_anadir_list_view
 id btn_intent
 id btn_ir_intent_implicto
 id btn_ir_list_view
+id btn_ir_recycler_view
 id button
 id button2
+id button3
 id buttonPanel
 id button_Continuar
 id cache_measures
@@ -2398,6 +2400,7 @@ layout abc_tooltip
 layout activity_blist_view
 layout activity_ciclo_de_vida
 layout activity_cintent_explicito_parametros
+layout activity_grecycler_view
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

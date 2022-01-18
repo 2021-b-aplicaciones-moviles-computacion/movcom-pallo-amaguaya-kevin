@@ -64,12 +64,16 @@
         "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\layout\\activity_blist_view.xml"
     },
     {
+        "merged": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cintent_explicito_parametros.xml.flat",
+        "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\layout\\activity_cintent_explicito_parametros.xml"
+    },
+    {
         "merged": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cintent_explicito_parametros.xml.flat",
-        "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\layout\\activity_cintent_explicito_parametros.xml"
+        "merged": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_grecycler_view.xml.flat",
+        "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\layout\\activity_grecycler_view.xml"
     },
     {
         "merged": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",

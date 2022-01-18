@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\1feeb76a5144ab87511629eac88d4f4c\core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\991eaf2b6472a37f0a174897411ac727\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\e6820b4283f100b74e1b36c4721f51ca\constraintlayout-2.1.2\AndroidManifest.xml:2:1-11:12
@@ -44,25 +44,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kevin\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\476d58516881ec5d55af756c0f0e09f1\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\f7e00a89488f4ca08e0520c00dd0334a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\7aad86a58ff5bbc0ee7ab1fb6b33fbac\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:5:5-25:19
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\991eaf2b6472a37f0a174897411ac727\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\991eaf2b6472a37f0a174897411ac727\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\e6820b4283f100b74e1b36c4721f51ca\constraintlayout-2.1.2\AndroidManifest.xml:9:5-20
@@ -91,36 +91,40 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\kevin\.gradle\cach
 		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:11:9-49
+activity#com.example.appsmoviles.GRecyclerView
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:12:9-60
+	android:name
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:12:19-48
 activity#com.example.appsmoviles.CIntentExplicitoParametros
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:12:9-73
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:13:9-64
 	android:name
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:12:19-61
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:13:19-61
 activity#com.example.appsmoviles.BListView
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:13:9-70
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:14:9-16:39
 	android:exported
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:13:45-68
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:13:19-44
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:15:13-38
 activity#com.example.appsmoviles.cicloDeVida
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:15:9-49
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:17:9-49
 	android:name
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:15:19-46
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:17:19-46
 activity#com.example.appsmoviles.MainActivity
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:16:9-24:20
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:exported
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:18:13-36
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:17:13-41
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
