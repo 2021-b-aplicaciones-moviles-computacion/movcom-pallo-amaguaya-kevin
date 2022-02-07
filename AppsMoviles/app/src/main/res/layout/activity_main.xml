@@ -71,9 +71,22 @@
         android:id="@+id/btn_ir_recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="GRecyclerView"
         app:layout_constraintEnd_toEndOf="@+id/btn_ir_intent_implicto"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="@+id/btn_ir_intent_implicto"
-        tools:layout_editor_absoluteY="62dp" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ir_http"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="http"
+        app:layout_constraintEnd_toEndOf="@+id/btn_intent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/btn_intent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_intent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

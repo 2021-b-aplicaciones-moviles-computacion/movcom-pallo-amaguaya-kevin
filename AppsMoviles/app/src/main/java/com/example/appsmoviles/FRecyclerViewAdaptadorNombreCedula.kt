@@ -18,7 +18,7 @@ class FRecyclerViewAdaptadorNombreCedula(
         val cedulaTextView : TextView
         val likeTextView: TextView
         val accionButton: Button
-        val numeroLikes = 0
+        var numeroLikes = 0
 
         init{
             nombreTextView = view.findViewById(R.id.tv_nombre)
@@ -31,7 +31,9 @@ class FRecyclerViewAdaptadorNombreCedula(
 
         }
         fun anadirLike(){
-
+            this.numeroLikes = this.numeroLikes + 1
+            likeTextView.text = this.numeroLikes.toString()
+            contexto.aumentarTotalLikes()
         }
     }
 

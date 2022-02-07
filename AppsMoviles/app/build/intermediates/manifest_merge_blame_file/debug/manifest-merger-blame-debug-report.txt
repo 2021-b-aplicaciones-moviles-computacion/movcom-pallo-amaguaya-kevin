@@ -11,7 +11,7 @@
 9-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:5:5-27:19
+11-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:5:5-32:19
 12        android:allowBackup="true"
 12-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -35,53 +35,68 @@
 22-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:13:9-64
 22-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:13:19-61
 23        <activity
-23-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:14:9-16:39
+23-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:15:9-21:20
 24            android:name="com.example.appsmoviles.BListView"
-24-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:15:13-38
-25            android:exported="true" />
-25-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:16:13-36
-26        <activity android:name="com.example.appsmoviles.cicloDeVida" />
-26-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:17:9-49
-26-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:17:19-46
-27        <activity
-27-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:18:9-26:20
-28            android:name="com.example.appsmoviles.MainActivity"
-28-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:19:13-41
-29            android:exported="true" >
-29-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:20:13-36
-30            <intent-filter>
-30-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:21:13-25:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:22:17-69
-31-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:22:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:24:17-77
-33-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:24:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <provider
-37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-38            android:name="androidx.startup.InitializationProvider"
-38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-39            android:authorities="com.example.appsmoviles.androidx-startup"
-39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-40            android:exported="false" >
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-41            <meta-data
-41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-43                android:value="androidx.startup" />
-43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-44            <meta-data
-44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\635432e1244dbb31b589f4475320b398\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\635432e1244dbb31b589f4475320b398\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-46                android:value="androidx.startup" />
-46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\635432e1244dbb31b589f4475320b398\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-47        </provider>
-48    </application>
-49
-50</manifest>
+24-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:15:19-44
+25            android:exported="true" >
+25-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:15:45-68
+26            <intent-filter>
+26-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.SEND" />
+27-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:17:17-69
+27-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.DEFAULT" />
+29-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:18:17-76
+29-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:18:27-73
+30
+31                <data android:mimeType="text/plain" />
+31-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:19:17-54
+31-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:19:23-52
+32            </intent-filter>
+33        </activity>
+34        <activity android:name="com.example.appsmoviles.cicloDeVida" />
+34-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:23:9-49
+34-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:23:19-46
+35        <activity
+35-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:24:9-31:20
+36            android:name="com.example.appsmoviles.MainActivity"
+36-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:25:13-41
+37            android:exported="true" >
+37-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:26:13-36
+38            <intent-filter>
+38-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:27:13-30:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:28:17-69
+39-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:28:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:29:17-77
+41-->C:\Users\kevin\Documents\Universidad\SeptimoSemestre\AplicacionesMoviles\movcom-pallo-amaguaya-kevin\AppsMoviles\app\src\main\AndroidManifest.xml:29:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <provider
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+47            android:authorities="com.example.appsmoviles.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\541c783e00ca53eebf780d216b98d756\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\635432e1244dbb31b589f4475320b398\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\635432e1244dbb31b589f4475320b398\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kevin\.gradle\caches\transforms-2\files-2.1\635432e1244dbb31b589f4475320b398\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+55        </provider>
+56    </application>
+57
+58</manifest>

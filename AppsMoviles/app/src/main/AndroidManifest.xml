@@ -9,11 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppsMoviles">
-        <activity android:name=".GRecyclerView"></activity>
+        <activity android:name=".HHttpActivity"></activity>
+        <activity android:name=".GRecyclerView" />
         <activity android:name=".CIntentExplicitoParametros" />
         <activity
             android:name=".BListView"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
         <activity android:name=".cicloDeVida" />
         <activity
             android:name=".MainActivity"

@@ -1936,13 +1936,13 @@ id bounceEnd
 id bounceStart
 id bt_D_respuesta
 id btn_anadir_list_view
+id btn_dar_like
 id btn_intent
 id btn_ir_intent_implicto
 id btn_ir_list_view
 id btn_ir_recycler_view
 id button
 id button2
-id button3
 id buttonPanel
 id button_Continuar
 id cache_measures
@@ -2182,6 +2182,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id reverseSawtooth
 id right
 id rightToLeft
@@ -2283,6 +2284,7 @@ id textView5
 id textView6
 id textView7
 id textView_First
+id textView_MeGusta
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2308,6 +2310,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_cedula
+id tv_likes
+id tv_nombre
 id unchecked
 id uniform
 id unlabeled
@@ -2467,6 +2472,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycler_view_vista
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

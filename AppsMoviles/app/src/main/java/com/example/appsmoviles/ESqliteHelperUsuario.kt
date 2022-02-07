@@ -16,7 +16,7 @@ class ESqliteHelperUsuario(contexto: Context?): SQLiteOpenHelper(
         val scriptCrearTablaUsuario =
             """
                 CREATE TABLE USUARIO (
-                id INTEGER PRIMARY KEY AUTOINCREMET,
+                id INTEGER PRIMARY KEY,
                 nombre VARCHAR(50),
                 descripcion VARCHAR(50)
                 )

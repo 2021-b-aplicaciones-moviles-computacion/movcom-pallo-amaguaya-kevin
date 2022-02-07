@@ -7,14 +7,11 @@ import android.provider.ContactsContract
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
-import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
     val CODIGO_RESPUESTA_INTENT_EXPLICITO = 401
-
     val CODIGO_RESPUESTA_INTENT_IMPLICITO = 402
 
     var resultLauncher = registerForActivityResult(
@@ -75,6 +72,7 @@ class MainActivity : AppCompatActivity() {
             irActividad(BListView::class.java)
         }
 
+        //Intent Implicito
         val botonIntentImplicito = findViewById<Button>(R.id.btn_ir_intent_implicto)
         botonIntentImplicito.
                 setOnClickListener {
@@ -86,7 +84,6 @@ class MainActivity : AppCompatActivity() {
                 }
 
         //Intent Expllicito
-
         val buttonIntent=findViewById<Button>(R.id.btn_intent)
         buttonIntent.setOnClickListener{
             abrirActividadConParametros(CIntentExplicitoParametros::class.java)
@@ -98,6 +95,14 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 abrirActividadConParametros(GRecyclerView::class.java)
             }
+
+        //HTTP
+        val buttonIrHttp = findViewById<Button>(R.id.btn_ir_http)
+        buttonIrHttp
+            .setOnClickListener {
+                abrirActividadConParametros(HHttpActivity::class.java)
+            }
+
     }
 
     fun abrirActividadConParametros(clase: Class<*>){
@@ -109,9 +114,9 @@ class MainActivity : AppCompatActivity() {
 
         intentExplicito.putExtra("a", BEntrenador("Joaquín", "Correa@epn.ec"))
 
-        resultLauncher.launch(intentExplicito)
+        //resultLauncher.launch(intentExplicito)
 
-        //startActivityForResult(intentExplicito, CODIGO_RESPUESTA_INTENT_EXPLICITO) //401
+        startActivityForResult(intentExplicito, CODIGO_RESPUESTA_INTENT_EXPLICITO) //401
 
 
     }
