@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="10px"
+    tools:context=".Matchs">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/btn_tinder2"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/tinder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/brillo"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/charla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="73dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="144dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="tinder"
+        android:textAlignment="textStart"
+        android:textColor="#F4267F"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_perfil2"
+        android:layout_width="38dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/_722585021_kevin_pallo"
+        android:shadowColor="#02FBFBFB"
+        app:cornerRadius="100px"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_perfil2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tinder" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="385dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="12dp"
+        android:background="#F6F6F6"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:paddingTop="20px"
+            android:text="0 Likes"
+            android:textAlignment="center"
+            android:textColor="#3E3D3D" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:paddingTop="20px"
+            android:text="Top Pìcks"
+            android:textAlignment="center"
+            android:textColor="#FF3E3D3D" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="265dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="452dp"
+        android:text="Asciende a Gold para ver a qué personas ya les gustaste."
+        android:textAlignment="center"
+        android:textColor="#3C3B3B"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/rectangle_7"
+        android:text="DESCUBE A QUIEN LE GUSTAS"
+        android:textColor="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
