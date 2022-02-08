@@ -1,0 +1,2 @@
+rootProject.name = "SimulationTinder"
+include ':app'
