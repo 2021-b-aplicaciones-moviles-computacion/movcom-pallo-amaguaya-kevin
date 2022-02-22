@@ -30,6 +30,7 @@ class GRecyclerView : AppCompatActivity() {
             )
 
         val recyclerViewEntrenador = findViewById<RecyclerView>(R.id.recyclerView)
+
         inicializarRecyclerView(
             listaEntrenador,
             this,
@@ -50,7 +51,7 @@ class GRecyclerView : AppCompatActivity() {
 
         recyclerView.adapter = adaptador
         recyclerView.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
-        recyclerView.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(actividad)
+        recyclerView.layoutManager = androidx.recyclerview. widget.LinearLayoutManager(actividad)
         adaptador.notifyDataSetChanged()
     }
 

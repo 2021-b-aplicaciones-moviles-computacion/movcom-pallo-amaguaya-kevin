@@ -3,14 +3,17 @@ package com.example.appsmoviles
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.beust.klaxon.Klaxon
 import com.github.kittinunf.fuel.httpGet
 import com.github.kittinunf.fuel.httpPost
 import kotlin.Result.*
+import com.github.kittinunf.result.Result
 
 class HHttpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hhttp)
+        metodoGet()
     }
 
     fun metodoGet() {
@@ -21,7 +24,7 @@ class HHttpActivity : AppCompatActivity() {
             .responseString { req, res, result ->
                 when (result) {
                     is Result.Failure -> {
-                        val error = result.getExeption()
+                        val error = result.getException()
                         Log.i("http-klaxon", "Error: ${error}")
                     }
                     is Result.Success -> {

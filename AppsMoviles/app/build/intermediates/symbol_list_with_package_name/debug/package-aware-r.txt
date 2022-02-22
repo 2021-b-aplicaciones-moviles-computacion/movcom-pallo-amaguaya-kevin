@@ -1938,6 +1938,7 @@ id bt_D_respuesta
 id btn_anadir_list_view
 id btn_dar_like
 id btn_intent
+id btn_ir_http
 id btn_ir_intent_implicto
 id btn_ir_list_view
 id btn_ir_recycler_view
@@ -2406,6 +2407,7 @@ layout activity_blist_view
 layout activity_ciclo_de_vida
 layout activity_cintent_explicito_parametros
 layout activity_grecycler_view
+layout activity_hhttp
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

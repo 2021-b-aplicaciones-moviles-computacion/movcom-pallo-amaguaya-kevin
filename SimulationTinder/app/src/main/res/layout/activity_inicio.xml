@@ -9,30 +9,32 @@
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/charla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button_IrMatch"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="52dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/brillo"
-        app:layout_constraintEnd_toStartOf="@+id/button13"
-        app:layout_constraintTop_toTopOf="@+id/button13" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button13" />
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="52dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/buscar"
-        app:layout_constraintBottom_toBottomOf="@+id/button_IrMatch"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_IrMatch" />
 
     <TextView
@@ -49,88 +51,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.lorentzos.flingswipe.SwipeFlingAdapterView
-        android:id="@+id/frame"
-        android:layout_width="408dp"
-        android:layout_height="626dp"
-        android:layout_marginTop="45dp"
-        android:background="#838383"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rotation_degrees="15.5"
-        tools:context=".MyActivity" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="56dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/ellipse_4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="84dp"
-        android:background="@drawable/ellipse_2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="62dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="84dp"
-        android:background="@drawable/ellipse_3"
-        android:shadowColor="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_NoLike"
-        app:strokeColor="#00FFFFFF" />
-
-    <Button
-        android:id="@+id/btn_NoLike"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="84dp"
-        android:background="@drawable/ellipse_5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="56dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="548dp"
-        android:background="@drawable/ellipse_1"
-        android:shadowColor="#00FFFFFF"
-        android:textColor="#DFD5D5"
-        android:textColorHighlight="#F4EFEF"
-        android:textColorHint="#F4F3F3"
-        android:textColorLink="#F3F0F0"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="34dp"
         android:layout_height="34dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/frame"
         app:layout_constraintEnd_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142"
         app:srcCompat="@drawable/tinder" />
 
     <Button
@@ -143,22 +70,29 @@
         android:shadowColor="#02FBFBFB"
         app:cornerRadius="100px"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_tinder"
-        android:layout_width="41dp"
-        android:layout_height="41dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/tinder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button11"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_Usuarios"
+        android:layout_width="410dp"
+        android:layout_height="663dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button11"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

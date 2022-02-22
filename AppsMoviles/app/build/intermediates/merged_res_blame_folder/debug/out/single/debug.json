@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_hhttp.xml.flat",
+        "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\layout\\activity_hhttp.xml"
+    },
+    {
         "merged": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\kevin\\Documents\\Universidad\\SeptimoSemestre\\AplicacionesMoviles\\movcom-pallo-amaguaya-kevin\\AppsMoviles\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },

@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.AppsMoviles" >
+        <activity android:name="com.example.appsmoviles.HHttpActivity" />
         <activity android:name="com.example.appsmoviles.GRecyclerView" />
         <activity android:name="com.example.appsmoviles.CIntentExplicitoParametros" />
         <activity

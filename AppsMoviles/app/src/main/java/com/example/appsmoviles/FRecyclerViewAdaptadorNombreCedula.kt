@@ -55,7 +55,6 @@ class FRecyclerViewAdaptadorNombreCedula(
         holder.nombreTextView.text = entrenador.nombre
         holder.cedulaTextView.text = entrenador.descripcion
         holder.accionButton.text = "Like ${entrenador.nombre}"
-        holder.likeTextView.text = "0"
     }
 
     //tamanio del arreglo

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import androidx.recyclerview.widget.RecyclerView
 
 class EditarPerfil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +18,8 @@ class EditarPerfil : AppCompatActivity() {
         btn_backBiografia.setOnClickListener {
             startActivity(Intent(this, Biografia::class.java))
         }
+
+
 
     }
 
