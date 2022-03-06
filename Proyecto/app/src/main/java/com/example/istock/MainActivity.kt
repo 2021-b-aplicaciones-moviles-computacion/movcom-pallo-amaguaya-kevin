@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.istock.views.SignInActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         var btn_Ir_registrar = findViewById<Button>(R.id.button_CompararAhora)
 
         btn_Ir_registrar.setOnClickListener {
-            startActivity(Intent(this, Login::class.java))
+            startActivity(Intent(this, SignInActivity::class.java))
         }
     }
 }
