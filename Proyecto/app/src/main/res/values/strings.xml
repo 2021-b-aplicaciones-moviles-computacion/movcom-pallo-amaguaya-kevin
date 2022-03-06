@@ -8,4 +8,8 @@
     <string name="sign_in">Inicia sesión para empezar</string>
     <string name="you_are_signed_in">Ya esta en el home</string>
     <string name="sign_out">Salir</string>
+    <string name="home">Home</string>
+    <string name="carrito">carrito</string>
+    <string name="explorar">Explorar</string>
+    <string name="perfil">Perfil</string>
 </resources>
