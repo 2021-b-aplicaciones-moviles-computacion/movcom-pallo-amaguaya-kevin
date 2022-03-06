@@ -10,16 +10,19 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 
 class Jugador : AppCompatActivity() {
 
+    val listJugador= ArrayList<Jugadores_class>()
     var idSeleccionado:Int = 0
-    var jugadoresFiltrados = listOf<Jugadores_class>()
+    var equipoSeleccionado:String=""
 
     var resultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ){
-            result ->
+    result ->
         if (result.resultCode == Activity.RESULT_OK){
             val toast = Toast.makeText(this, "Jugador editado correctamente", Toast.LENGTH_LONG)
             toast.show()
@@ -31,31 +34,51 @@ class Jugador : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jugador)
 
-        var idSeleccionado = intent.getIntExtra("idSeleccionado",0)
-        var idEquipoAux = BaseDeDatos.equipos[idSeleccionado].idEquipo
-
         val listView = findViewById<ListView>(R.id.list_view_Jugador)
         val button_create = findViewById<Button>(R.id.button_crearJugador)
 
-        jugadoresFiltrados = BaseDeDatos.jugadores.filter { it.idEquipo == idEquipoAux}
 
+        equipoSeleccionado = intent.getStringExtra("id-equipo").toString()
 
-        val adaptador = ArrayAdapter(
-            this,
-            android.R.layout.simple_list_item_1,
-            jugadoresFiltrados
-        )
-
-        listView.adapter = adaptador
-        adaptador.notifyDataSetChanged()
-
-        registerForContextMenu(listView)
+        val db = Firebase.firestore
+        db.collection("Equipos")
+            .document("${equipoSeleccionado}")
+            .collection("jugadores")
+            .get()
+            .addOnSuccessListener { result ->
+                for (document in result) {
+                    Log.i("datos_equipo", "${document.data.values}")
+                    Log.i("datos_equipo", "${document.id}")
+                    listJugador.add(
+                        Jugadores_class(
+                            document.id.toString(),
+                            document.data.get("nombre").toString(),
+                            document.data.get("sueldo").toString(),
+                            document.data.get("fechaNacimiento").toString(),
+                            document.data.get("dorsal").toString(),
+                            document.data.get("lesiones").toString()
+                        )
+                    )
+                }
+                val adaptador = ArrayAdapter(
+                    this,
+                    android.R.layout.simple_list_item_1,
+                    listJugador
+                )
+                listView.adapter = adaptador
+                adaptador.notifyDataSetChanged()
+                registerForContextMenu(listView)
+            }
+            .addOnFailureListener {
+                Log.i("mostrar_jugador","No se muestra la lista de jugadores")
+            }
 
         button_create .setOnClickListener {
             //Botón para crear un nuevo Equipo
             val toast = Toast.makeText(this, "Boton sin funcionalidad", Toast.LENGTH_LONG)
             toast.show()
         }
+
 
     }
 
@@ -75,11 +98,11 @@ class Jugador : AppCompatActivity() {
         return when(item.itemId){
             R.id.menu_editar_jugador ->{
                 //Log.i("menu-editar", "Id: ${idSeleccionado} info: ${BaseDeDatos.equipos[idSeleccionado]}")
-                editarJugador(jugadoresFiltrados[idSeleccionado])
+                editarJugador(listJugador[idSeleccionado])
                 return true
             }
             R.id.menu_eliminar_jugador ->{
-                eliminarJugador(jugadoresFiltrados[idSeleccionado])
+                eliminarJugador(listJugador[idSeleccionado])
                 return true
 
             }
@@ -88,25 +111,28 @@ class Jugador : AppCompatActivity() {
     }
 
     fun editarJugador(jugador: Jugadores_class){
-        val intentExplito = Intent(this, Jugador_editar::class.java)
+      val intentExplito = Intent(this, Jugador_editar::class.java)
         Log.i("intent-recibido","Voy a enviar: ${jugador} ")
         intentExplito.putExtra("jugador_Editar", jugador)
+        intentExplito.putExtra("id_Equipo", equipoSeleccionado)
         resultLauncher.launch(intentExplito)
     }
 
 
     fun eliminarJugador(jugador: Jugadores_class){
-        var indiceAux=-1
-        BaseDeDatos.jugadores.forEachIndexed(){ indice:Int , jugadorAux : Jugadores_class->
-            if(jugadorAux.nombreJugador == jugador.nombreJugador){
-                indiceAux = indice
+        var db = Firebase.firestore
+        db.collection("Equipos")
+            .document("${equipoSeleccionado}")
+            .collection("jugadores")
+            .document("${jugador.idJugador}")
+            .delete()
+            .addOnSuccessListener {
+                Log.i("eliminar_jugador","Jugador eliminado")
             }
-        }
-        Log.i("buscar_jugador", "Jugador encontrado en la posicion: ${indiceAux}")
-        BaseDeDatos.jugadores.removeAt(indiceAux)
-        var toast = Toast.makeText(this, "Jugador Eliminado", Toast.LENGTH_LONG)
-        toast.show()
-        var intent = Intent(this, Jugador::class.java)
+            .addOnFailureListener {
+                Log.i("eliminar_jugador","Jugador no eliminado")
+            }
+        var intent = Intent(this, Equipo::class.java)
         startActivity(intent)
     }
 

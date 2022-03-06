@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "180757035019",
+    "project_id": "equipos-de-futbol-64878",
+    "storage_bucket": "equipos-de-futbol-64878.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180757035019:android:ffaf097f0cd413cd4a2f0e",
+        "android_client_info": {
+          "package_name": "com.example.examen_primerbimestre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180757035019-rc11idkqc7h1vm0bj734ltivh06216es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqdn5jVuNoSaFOmmIVMv2xBMv84Ig7wng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180757035019-rc11idkqc7h1vm0bj734ltivh06216es.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

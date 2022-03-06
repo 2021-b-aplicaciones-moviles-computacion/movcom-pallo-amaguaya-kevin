@@ -28,18 +28,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInput_idEquipoJugador" />
-
-    <EditText
-        android:id="@+id/textInput_idEquipoJugador"
-        android:layout_width="214dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="52dp"
-        android:background="@drawable/rectangle_2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInput_Sueldo" />
 
@@ -82,8 +71,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:text="@string/lesiones"
-        app:layout_constraintStart_toStartOf="@+id/textView20"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView18"
@@ -93,15 +82,6 @@
         android:text="@string/dorsal"
         app:layout_constraintStart_toStartOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="@string/idEquipo_jugador"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView15"
