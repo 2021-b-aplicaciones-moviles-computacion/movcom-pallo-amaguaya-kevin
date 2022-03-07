@@ -29,14 +29,14 @@ class ProfileActivity : AppCompatActivity() {
                     startActivity(i);
                 }
                 R.id.page_2 -> {
+                    val i = Intent(this, CarritoActivity::class.java)
+                    startActivity(i);
                 }
                 R.id.page_3 -> {
                     val i = Intent(this, ExplorarActivity::class.java)
                     startActivity(i);
                 }
                 R.id.page_4 -> {
-                    val i = Intent(this, ProfileActivity::class.java)
-                    startActivity(i);
                 }
             }
             true
