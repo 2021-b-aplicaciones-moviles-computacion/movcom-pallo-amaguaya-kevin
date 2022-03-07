@@ -3,16 +3,9 @@ package com.example.istock
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.istock.views.CreateAccountActivityy
-import com.example.istock.utils.FirebaseUtils.firebaseAuth
-import com.example.istock.extensions.Extensions.toast
 import android.util.Log
 import android.widget.ArrayAdapter
-import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
-import com.example.istock.extensions.Extensions.toast
-import com.example.istock.utils.FirebaseUtils.firebaseAuth
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_home.*
@@ -31,6 +24,8 @@ class HomeActivity : AppCompatActivity() {
 
                 }
                 R.id.page_2 -> {
+                    val i = Intent(this, CarritoActivity::class.java)
+                    startActivity(i);
                 }
                 R.id.page_3 -> {
                     val i = Intent(this, ExplorarActivity::class.java)
