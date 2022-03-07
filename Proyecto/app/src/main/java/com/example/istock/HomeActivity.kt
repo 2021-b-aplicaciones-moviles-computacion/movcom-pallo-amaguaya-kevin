@@ -40,6 +40,7 @@ class HomeActivity : AppCompatActivity() {
                     startActivity(i);
                 }
             }
+            true
         }
 
         var recyclierViewCategorias = findViewById<RecyclerView>(R.id.listView_Categorias)
@@ -92,5 +93,3 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-
-}
