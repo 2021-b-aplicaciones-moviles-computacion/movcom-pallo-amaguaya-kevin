@@ -8,4 +8,5 @@ object Utils {
     val db = Firebase.firestore
     val referencia = db.collection("productos")
     val mListaProductos = ArrayList<BProductos>()
+    val mCarrito = ArrayList<BProductos>()
 }

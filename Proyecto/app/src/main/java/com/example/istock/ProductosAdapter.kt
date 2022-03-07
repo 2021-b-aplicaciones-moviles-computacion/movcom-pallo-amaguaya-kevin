@@ -47,6 +47,7 @@ class ProductosAdapter(
             intentExplicito.putExtra("precio", "${productos.precio}")
             intentExplicito.putExtra("descripcion", "${productos.descripcion}")
             intentExplicito.putExtra("categoria", "${productos.categoria}")
+            intentExplicito.putExtra("stock", "${productos.stock}")
             contexto.startActivity(intentExplicito)
         }
     }
