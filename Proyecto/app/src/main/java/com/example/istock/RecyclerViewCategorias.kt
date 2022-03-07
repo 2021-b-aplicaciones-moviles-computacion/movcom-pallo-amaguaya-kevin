@@ -1,10 +1,11 @@
 package com.example.istock
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -15,15 +16,15 @@ class RecyclerViewCategorias(
     private val recyclerView: RecyclerView
 ):RecyclerView.Adapter<RecyclerViewCategorias.MyViewHolder>() {
 
+    var listProd = ArrayList<Productos>()
+
     inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view){
         val categoriaName: TextView
-        val productName: TextView
-        val valorProducto: TextView
+        val recyclierViewProd:RecyclerView
 
         init{
             categoriaName = view.findViewById(R.id.textView_Productos)
-            productName = view.findViewById(R.id.textView_nombreProducto)
-            valorProducto = view.findViewById(R.id.textView_valorUnitario)
+            recyclierViewProd = view.findViewById(R.id.recycler_viewHor_prod)
         }
     }
 
@@ -39,24 +40,43 @@ class RecyclerViewCategorias(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val categoria = listaCategoria[position]
-        holder.categoriaName.text = categoria.nombre
-        holder.productName.text = "Magos"
-        holder.valorProducto.text = "0.50"
 
-       /* var db = Firebase.firestore
+        holder.categoriaName.text = listaCategoria[position].nombre
+        val db=Firebase.firestore
+
+        //var recyclierViewProd = recyclerView.findViewById<RecyclerView>(R.id.recycler_viewHor_prod)
+
         db.collection("Categoria")
-            .document("${categoria.id_Categorias}")
-            .collection("${categoria.nombre}")
+            .document("${listaCategoria[position].id_Categorias}")
+            .collection("${listaCategoria[position].nombre}")
             .get()
-            .addOnSuccessListener { resultado ->
-                for(col in resultado){
-                    holder.productName.text = col.data.get("nombre").toString()
-                    holder.valorProducto.text = col.data.get("valorUnitario").toString()
+            .addOnSuccessListener { result ->
+                listProd.clear()
+                for(documentos in result ){
+                    listProd.add( Productos(
+                        documentos.id,
+                        documentos.data.get("nombre").toString(),
+                        documentos.data.get("valorUnitario").toString(),
+                        documentos.data.get("cantidad").toString(),
+                        documentos.data.get("enlace").toString()
+                    )
+                    )
                 }
-                //holder.productName.text = n
-                //holder.valorProducto.text = vP
-            }*/
+
+                val adaptador = RecyclerViewProductos_Home(
+                    this,
+                    listProd,
+                    holder.recyclierViewProd
+                )
+                holder.recyclierViewProd.adapter = adaptador
+                holder.recyclierViewProd.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
+                holder.recyclierViewProd.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this.contexto, LinearLayoutManager.HORIZONTAL, false)
+                adaptador.notifyDataSetChanged()
+                contexto.registerForContextMenu(holder.recyclierViewProd)
+            }
+            .addOnFailureListener {
+                Log.i("recyclerView_H","Fallo el recycler")
+            }
     }
 
     override fun getItemCount(): Int {
