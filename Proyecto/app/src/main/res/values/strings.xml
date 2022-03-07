@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">IStock</string>
+    <string name="create_account">Crear Perfil</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Repetir contraseña</string>
+    <string name="or">o</string>
+    <string name="sign_in">Inicia sesión para empezar</string>
+    <string name="you_are_signed_in">Ya esta en el home</string>
+    <string name="sign_out">Salir</string>
+    <string name="home">Home</string>
+    <string name="carrito">carrito</string>
+    <string name="explorar">Explorar</string>
+    <string name="perfil">Perfil</string>
+    <string name="sign_out_label">Salir</string>
+    <string name="welcome">Bienvenido</string>
+</resources>

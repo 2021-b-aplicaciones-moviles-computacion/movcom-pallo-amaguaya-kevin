@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600px"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView_Productos"
+        android:layout_width="178dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Frutas y verduras"
+        android:textColor="#1E1E1E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button_verTodos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_verTodos"
+        android:layout_width="122dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_secondary"
+        android:text="Ver todos"
+        android:textColor="#393939"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_viewHor_prod"
+        android:layout_width="409dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Productos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

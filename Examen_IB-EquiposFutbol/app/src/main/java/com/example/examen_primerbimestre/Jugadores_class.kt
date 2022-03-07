@@ -4,11 +4,11 @@ import android.os.Parcel
 import android.os.Parcelable
 
 class Jugadores_class(
+      var idJugador:String?,
       var nombreJugador:String?,
       var sueldo: String?,
       var fechaNacimiento: String?,
       var dorsal: String?,
-      var idEquipo: String?,
       var lesion: String?,
 ) : Parcelable {
 
@@ -25,7 +25,6 @@ class Jugadores_class(
     override fun toString(): String {
         return """
                 |Nombre: ${nombreJugador} 
-                |Equipo: ${idEquipo} 
                 |Fecha de nacimiento: ${fechaNacimiento} 
                 |Dorsal: ${dorsal}  
                 |Lesion: ${lesion} 
@@ -38,12 +37,12 @@ class Jugadores_class(
     }
 
     override fun writeToParcel(dest: Parcel?, flags: Int) {
+        dest?.writeString(idJugador)
         dest?.writeString(nombreJugador)
         dest?.writeString(fechaNacimiento)
         dest?.writeString(sueldo)
         dest?.writeString(lesion)
         dest?.writeString(dorsal)
-        dest?.writeString(idEquipo)
     }
 
     companion object CREATOR : Parcelable.Creator<Jugadores_class> {
