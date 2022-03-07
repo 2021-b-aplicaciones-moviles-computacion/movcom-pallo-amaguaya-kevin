@@ -24,7 +24,6 @@ class HomeActivity : AppCompatActivity() {
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.item1 -> {
-                    startActivity(Intent(this, Buscar::class.java))
                     true
                 }
                 R.id.item2 -> {
