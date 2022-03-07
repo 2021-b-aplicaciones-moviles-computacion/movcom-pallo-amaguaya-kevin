@@ -7,6 +7,9 @@ import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
+import com.example.istock.extensions.Extensions.toast
+import com.example.istock.utils.FirebaseUtils.firebaseAuth
+import com.example.istock.views.CreateAccountActivityy
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -20,25 +23,22 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        
+        bottom_navigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.page_1 -> {
 
-        BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            when(item.itemId) {
-                R.id.item1 -> {
-                    true
                 }
-                R.id.item2 -> {
-                    // Respond to navigation item 2 click
-                    true
+                R.id.page_2 -> {
                 }
-                R.id.item3 -> {
-                    // Respond to navigation item 2 click
-                    true
+                R.id.page_3 -> {
+                    val i = Intent(this, ExplorarActivity::class.java)
+                    startActivity(i);
                 }
-                R.id.item4 -> {
-                    // Respond to navigation item 2 click
-                    true
+                R.id.page_4 -> {
+                    val i = Intent(this, ProfileActivity::class.java)
+                    startActivity(i);
                 }
-                else -> false
             }
         }
 
@@ -88,6 +88,8 @@ class HomeActivity : AppCompatActivity() {
             toast("signed out")
             finish()
         }*/
+            true
+        }
     }
 
 
