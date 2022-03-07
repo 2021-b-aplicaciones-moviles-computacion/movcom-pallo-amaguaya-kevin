@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.istock.model.Productos
+import com.example.istock.model.BProductos
 import java.net.URI
 
-class ProductosAdapter(private val dataSet: ArrayList<Productos>):
+class ProductosAdapter(private val dataSet: ArrayList<BProductos>):
     RecyclerView.Adapter<ProductosAdapter.ViewHolder>()  {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -34,6 +34,7 @@ class ProductosAdapter(private val dataSet: ArrayList<Productos>):
 
         viewHolder.nombre.text = productos.nombre
         viewHolder.precio.text = productos.precio.toString()
+        Picasso
         //viewHolder.iconoImagen.setImageURI(dataSet[position].toString())
     }
 

@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Buscar"></activity>
         <activity
             android:name=".ExplorarActivity"
             android:exported="false" />
@@ -26,7 +27,7 @@
         <activity
             android:name=".views.CreateAccountActivityy"
             android:exported="false" />
-        <activity android:name=".Productos" />
+        <activity android:name=".Productos_home" />
         <activity android:name=".Login" />
         <activity
             android:name=".MainActivity"

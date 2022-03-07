@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.istock.model.BProductos
 import com.example.istock.model.Productos
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -17,7 +18,7 @@ class ExplorarActivity : AppCompatActivity() {
     private lateinit var adapter: ProductosAdapter
     val db = Firebase.firestore
     val referencia = db.collection("productos")
-    val mListaProductos = ArrayList<Productos>()
+    val mListaProductos = ArrayList<BProductos>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_explorar)
@@ -42,7 +43,7 @@ class ExplorarActivity : AppCompatActivity() {
         referencia.get()
             .addOnSuccessListener { result ->
                 for (document in result){
-                    mListaProductos.add(Productos(
+                    mListaProductos.add(BProductos(
                         document.data.get("nombre").toString(),
                         document.data.get("descripcion").toString(),
                         document.data.get("stock").toString().toDouble(),
