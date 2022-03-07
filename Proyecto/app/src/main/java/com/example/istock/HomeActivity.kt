@@ -12,7 +12,6 @@ import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import com.example.istock.extensions.Extensions.toast
 import com.example.istock.utils.FirebaseUtils.firebaseAuth
-import com.example.istock.views.CreateAccountActivityy
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
