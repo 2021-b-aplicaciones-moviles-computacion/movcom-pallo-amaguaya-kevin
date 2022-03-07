@@ -6,22 +6,25 @@ import android.os.Parcelable
 class Productos(
     var id_Productos:String?,
     var nombre:String?,
-    var valorUnitario:Float?,
-    var cantidad:Int?
+    var valorUnitario:String?,
+    var cantidad:String?,
+    var enlace:String?
 ):Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
-        parcel.readValue(Float::class.java.classLoader) as? Float,
-        parcel.readValue(Int::class.java.classLoader) as? Int
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString()
     ) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(id_Productos)
         parcel.writeString(nombre)
-        parcel.writeValue(valorUnitario)
-        parcel.writeValue(cantidad)
+        parcel.writeString(valorUnitario)
+        parcel.writeString(cantidad)
+        parcel.writeString(enlace)
     }
 
     override fun describeContents(): Int {

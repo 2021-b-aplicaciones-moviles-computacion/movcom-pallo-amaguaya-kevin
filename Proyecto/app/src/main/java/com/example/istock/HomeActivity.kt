@@ -53,39 +53,20 @@ class HomeActivity : AppCompatActivity() {
                     )
                 }
                 Log.i("categoria","${categoriasList}")
-
                 val adaptador = RecyclerViewCategorias(
                     this,
                     categoriasList,
                     recyclierViewCategorias
                 )
-
                 recyclierViewCategorias.adapter = adaptador
                 recyclierViewCategorias.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
                 recyclierViewCategorias.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
                 adaptador.notifyDataSetChanged()
                 registerForContextMenu(recyclierViewCategorias)
-
             }
             .addOnFailureListener {
                 Log.i("categoria","No se pudo realizar la accion")
             }
-
-        //var btn_verTodos = findViewById<Button>(R.id.button_verTodos)
-        //btn_verTodos.setOnClickListener {
-
-        //}
-
-
-        /*      BOTÓN DE LOGOUT
-
-        btnSignOut.setOnClickListener {
-            firebaseAuth.signOut()
-            startActivity(Intent(this, CreateAccountActivityy::class.java))
-            toast("signed out")
-            finish()
-        }*/
-            true
         }
     }
 

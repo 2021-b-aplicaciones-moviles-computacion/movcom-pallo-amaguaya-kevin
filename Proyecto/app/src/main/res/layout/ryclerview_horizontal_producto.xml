@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView6_Prod"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView_NameProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="95dp"
+        android:text="TextView"
+        android:textColor="#505050"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="118dp"
+        android:text="1 Unidad"
+        android:textColor="#FF505050"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView_PecioProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="120dp"
+        android:text="10 c/u"
+        android:textColor="#FF505050"
+        android:textSize="10sp" />
+
+</androidx.cardview.widget.CardView>
