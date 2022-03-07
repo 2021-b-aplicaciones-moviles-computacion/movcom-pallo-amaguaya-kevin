@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -94,8 +95,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listView_Categorias"
-        android:layout_width="403dp"
-        android:layout_height="278dp"
+        android:layout_width="406dp"
+        android:layout_height="333dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
