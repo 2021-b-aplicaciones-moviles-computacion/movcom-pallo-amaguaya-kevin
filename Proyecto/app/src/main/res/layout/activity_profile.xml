@@ -51,7 +51,6 @@
                 android:id="@+id/account_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Nombre"
                 android:textColor="@android:color/primary_text_light"
                 android:textStyle="bold" />
 
@@ -59,14 +58,12 @@
                 android:id="@+id/account_email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="@string/email"
                 android:textColor="@android:color/secondary_text_light" />
 
             <TextView
-                android:id="@+id/textView18"
+                android:id="@+id/account_telefono"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="Telefono"
                 android:textColor="@android:color/secondary_text_light" />
         </LinearLayout>
     </LinearLayout>
