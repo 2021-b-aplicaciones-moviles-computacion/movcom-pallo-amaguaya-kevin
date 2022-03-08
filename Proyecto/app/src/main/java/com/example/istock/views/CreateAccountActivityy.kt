@@ -40,8 +40,6 @@ class CreateAccountActivityy : AppCompatActivity() {
         }
     }
 
-
-
     private fun notEmpty(): Boolean = etEmail.text.toString().trim().isNotEmpty() &&
             etPassword.text.toString().trim().isNotEmpty() &&
             etConfirmPassword.text.toString().trim().isNotEmpty()
