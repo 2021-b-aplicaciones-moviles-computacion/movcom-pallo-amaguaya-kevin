@@ -42,10 +42,11 @@ class ExplorarActivity : AppCompatActivity() {
             }
             true
         }
+        val aux = ArrayList<BProductos>()
         referencia.get()
             .addOnSuccessListener { result ->
                 for (document in result){
-                    mListaProductos.add(BProductos(
+                    aux.add(BProductos(
                         document.data.get("nombre").toString(),
                         document.data.get("descripcion").toString(),
                         document.data.get("stock").toString().toDouble(),
@@ -55,14 +56,13 @@ class ExplorarActivity : AppCompatActivity() {
                     )
                     )
                 }
-                Log.d("aaa", "$mListaProductos")
-                adapter = ProductosAdapter(this, mListaProductos)
+                adapter = ProductosAdapter(this, aux)
                 recyclerView_productos.adapter = adapter
                 linearLayoutManager = LinearLayoutManager(this)
                 recyclerView_productos.layoutManager = linearLayoutManager
-
             }
-
+        if (aux.size > mListaProductos.size)
+            mListaProductos = aux
 
     }
 }

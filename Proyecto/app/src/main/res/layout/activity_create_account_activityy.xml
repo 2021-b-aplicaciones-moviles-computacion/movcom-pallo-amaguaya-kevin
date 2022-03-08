@@ -152,7 +152,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView20"
         android:layout_width="375dp"
         android:layout_height="45dp"
