@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "949198469724",
+    "project_id": "app-moviles-2021b",
+    "storage_bucket": "app-moviles-2021b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949198469724:android:288c692cf3c5fdfa7c8499",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949198469724-uvroonpuit5ov7nvpr591fevjufcje9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6CI885vMnByB2j0_aaGkW8KQO5b5tfwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949198469724-uvroonpuit5ov7nvpr591fevjufcje9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
