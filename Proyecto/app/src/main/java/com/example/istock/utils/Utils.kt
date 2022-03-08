@@ -7,6 +7,6 @@ import com.google.firebase.ktx.Firebase
 object Utils {
     val db = Firebase.firestore
     val referencia = db.collection("productos")
-    val mListaProductos = ArrayList<BProductos>()
+    var mListaProductos = ArrayList<BProductos>()
     val mCarrito = ArrayList<BProductos>()
 }

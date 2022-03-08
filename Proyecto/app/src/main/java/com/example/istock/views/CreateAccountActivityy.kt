@@ -24,24 +24,23 @@ class CreateAccountActivityy : AppCompatActivity() {
         btnCreateAccount.setOnClickListener {
             signIn()
         }
-
         btnSignIn2.setOnClickListener {
             startActivity(Intent(this, SignInActivity::class.java))
-            toast("please sign into your account")
+            toast("Por favor inicie sesión en su cuenta")
             finish()
         }
     }
-
-    /* check if there's a signed-in user*/
 
     override fun onStart() {
         super.onStart()
         val user: FirebaseUser? = firebaseAuth.currentUser
         user?.let {
             startActivity(Intent(this, HomeActivity::class.java))
-            toast("welcome back")
+            toast("¡Cuenta creada con éxito!")
         }
     }
+
+
 
     private fun notEmpty(): Boolean = etEmail.text.toString().trim().isNotEmpty() &&
             etPassword.text.toString().trim().isNotEmpty() &&
@@ -56,31 +55,29 @@ class CreateAccountActivityy : AppCompatActivity() {
         } else if (!notEmpty()) {
             createAccountInputsArray.forEach { input ->
                 if (input.text.toString().trim().isEmpty()) {
-                    input.error = "${input.hint} is required"
+                    input.error = "${input.hint} es requerido"
                 }
             }
         } else {
-            toast("passwords are not matching !")
+            toast("¡Las contraseñas no coinciden!")
         }
         return identical
     }
 
     private fun signIn() {
         if (identicalPassword()) {
-            // identicalPassword() returns true only  when inputs are not empty and passwords are identical
             userEmail = etEmail.text.toString().trim()
             userPassword = etPassword.text.toString().trim()
 
-            /*create a user*/
             firebaseAuth.createUserWithEmailAndPassword(userEmail, userPassword)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        toast("created account successfully !")
+                        toast("¡Cuenta creada con éxito!")
                         sendEmailVerification()
                         startActivity(Intent(this, HomeActivity::class.java))
                         finish()
                     } else {
-                        toast("failed to Authenticate !")
+                        toast("¡Falla en la autenticación!")
                     }
                 }
         }
@@ -94,7 +91,7 @@ class CreateAccountActivityy : AppCompatActivity() {
         firebaseUser?.let {
             it.sendEmailVerification().addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    toast("email sent to $userEmail")
+                    toast("Email enviado a $userEmail")
                 }
             }
         }

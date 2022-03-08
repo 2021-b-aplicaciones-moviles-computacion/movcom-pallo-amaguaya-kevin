@@ -41,16 +41,16 @@ class SignInActivity : AppCompatActivity() {
                 .addOnCompleteListener { signIn ->
                     if (signIn.isSuccessful) {
                         startActivity(Intent(this, HomeActivity::class.java))
-                        toast("signed in successfully")
+                        toast("inicio de  sesión con éxito")
                         finish()
                     } else {
-                        toast("sign in failed")
+                        toast("Fallo al iniciar sesion")
                     }
                 }
         } else {
             signInInputsArray.forEach { input ->
                 if (input.text.toString().trim().isEmpty()) {
-                    input.error = "${input.hint} is required"
+                    input.error = "${input.hint} es requerido"
                 }
             }
         }
