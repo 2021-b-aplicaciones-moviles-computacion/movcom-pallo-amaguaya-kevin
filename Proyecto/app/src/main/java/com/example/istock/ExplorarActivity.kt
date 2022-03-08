@@ -29,6 +29,8 @@ class ExplorarActivity : AppCompatActivity() {
                     startActivity(i);
                 }
                 R.id.page_2 -> {
+                    val i = Intent(this, CarritoActivity::class.java)
+                    startActivity(i);
                 }
                 R.id.page_3 -> {
 
